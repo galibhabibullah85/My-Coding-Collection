@@ -1,0 +1,136 @@
+#container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 550px;
+	flex-direction: column;
+}
+
+.fortune-wheel{
+	width: 500px;
+	height: 500px;
+	background-color: red;
+	border: 5px solid black;
+	border-radius: 50%;
+	position: relative;
+	margin-top: 10px;
+	animation: rotate 1.5s infinite ease alternate;
+}
+
+.indicate{
+	width: 0;
+	height: 0;
+	border-top: 40px solid black;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	position: absolute;
+	top: 6px;
+	z-index: 1;
+	transform-origin: top;
+	transform: rotate(30deg);
+	animation: indicate 1.5s infinite ease alternate;
+}
+
+.triangle1,.triangle5,.triangle9{
+	width: 0;
+	height: 0;
+	border-bottom: 250px solid yellow;
+	border-left: 35px solid transparent;
+	border-right: 35px solid transparent;
+	position: absolute;
+	bottom: 0;
+	left: 220px;
+}
+
+.triangle2,.triangle6,.triangle10{
+	width: 0;
+	height: 0;
+	border-top: 250px solid yellow;
+	border-left: 35px solid transparent;
+	border-right: 35px solid transparent;
+	position: absolute;
+	top: 0;
+	left: 220px;
+}
+
+.triangle3,.triangle7,.triangle11{
+	width: 0;
+	height: 0;
+	border-left: 250px solid yellow;
+	border-top: 35px solid transparent;
+	border-bottom: 35px solid transparent;
+	position: absolute;
+	left: 0;
+	top: 220px;
+}
+
+.triangle4,.triangle8,.triangle12{
+	width: 0;
+	height: 0;
+	border-right: 250px solid yellow;
+	border-top: 35px solid transparent;
+	border-bottom: 35px solid transparent;
+	position: absolute;
+	right: 0;
+	top: 220px;
+}
+
+.triangle5{
+	transform-origin: top;
+	transform: rotate(30deg);
+	border-bottom: 248px solid orange;
+}
+
+.triangle6{
+	transform-origin: bottom;
+	transform: rotate(30deg);
+	border-top: 254px solid orange;
+}
+
+.triangle7{
+	transform-origin: right;
+	transform: rotate(30deg);
+	border-left: 256px solid orange;
+}
+
+.triangle8{
+	transform-origin: left;
+	transform: rotate(30deg);
+	border-right: 247px solid orange;
+}
+
+.triangle9{
+	transform-origin: top;
+	transform: rotate(60deg);
+	border-bottom: 246px solid chocolate;
+}
+
+.triangle10{
+	transform-origin: bottom;
+	transform: rotate(60deg);
+	border-top: 250px solid chocolate;
+}
+
+.triangle11{
+	transform-origin: right;
+	transform: rotate(60deg);
+	border-left: 250px solid chocolate;
+}
+
+.triangle12{
+	transform-origin: left;
+	transform: rotate(60deg);
+	border-right: 250px solid chocolate;
+}
+
+@keyframes rotate{
+	from{
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes indicate{
+	from{
+		transform: rotate(35deg);
+	}
+}
