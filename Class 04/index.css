@@ -1,0 +1,61 @@
+body{
+	overflow: hidden;
+}
+
+.block1,.block2,.block3{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 20px;
+	flex-direction: row;
+	width: 100%;
+	margin-bottom: 100px;
+}
+
+.block2{
+	position: fixed;
+	left: 0;
+	top: 100px;
+}
+
+.block3{
+	position: fixed;
+	left: 0;
+	top: 150px;
+}
+
+i{
+	margin: 0 20px;
+}
+
+.block1 > i{
+	animation: downup 2s linear infinite alternate;
+}
+
+.block2 > i{
+	animation: rotate 2s linear infinite alternate;
+}
+
+.block3 > i{
+	animation: updown 2s linear infinite alternate;
+}
+
+@keyframes downup{
+	from{
+		margin-top: 90px;
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes rotate{
+	from{
+		transform: rotate(-360deg);
+	}
+}
+
+@keyframes updown{
+	from{
+		margin-top: -90px;
+		transform: rotate(360deg);
+	}
+}
