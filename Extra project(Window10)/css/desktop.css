@@ -16,7 +16,7 @@ html,body{
 .container{
 	height: 100%;
 	width: 100%;
-	background: url("../img/desktop.jpg");
+	background: url("https://raw.githubusercontent.com/galibhabibullah85/My-Coding-Collection/main/Extra%20project(Window10)/img/desktop.JPG");
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	display: flex;
