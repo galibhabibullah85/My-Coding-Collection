@@ -5,7 +5,7 @@ function typing(){
 		  typeSpeed: 40,
 		  onComplete:function(self){
 		  	document.getElementById("typingSound").pause();
-		  	document.getElementById("typingSound").currentTime = 0.0;;
+		  	document.getElementById("typingSound").currentTime = 0.0;
 		  }
 		};
 
